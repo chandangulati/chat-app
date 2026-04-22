@@ -386,7 +386,7 @@ try {
     });
   });
 
-  const PORT = process.env.PORT || 49152;
+  const PORT = process.env.PORT || 3002;
 
   app.get("*", (req, res, next) => {
     if (req.path.startsWith("/socket.io")) {
